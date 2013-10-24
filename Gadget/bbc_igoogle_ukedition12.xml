@@ -7,8 +7,8 @@
   author="BBC News"
   author_email="bbcnewsgadget@bbc.co.uk"
   author_photo="http://news.bbc.co.uk/shared/img/v4/white_bbc.png"
-  screenshot="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/promo_large2.jpg"
-  thumbnail="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/promo_small.jpg" singleton="true">
+  screenshot="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/promo_large2.jpg"
+  thumbnail="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/promo_small.jpg" singleton="true">
     <Require feature="views" />
     <Require feature="dynamic-height"/>
     <Require feature="com.google.gadgets.analytics" />
@@ -114,7 +114,7 @@
 			{
 				width:100%;
 				padding-top:6px;
-				background-image:url('http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif');
+				background-image:url('https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif');
 				background-position:0px 10px;
 				background-repeat:no-repeat;
 				font-family:Verdana !important;
@@ -469,7 +469,7 @@
 				float:left;
 				width:100%;
 				height:26px;
-				background-image:url('http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/tab_bg_gradient.png');
+				background-image:url('https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/tab_bg_gradient.png');
 				min-width:240px;
 			}
 			
@@ -762,13 +762,13 @@
 					var agt=navigator.userAgent.toLowerCase();
 					if(agt.split(';')[1] == " msie 6.0")
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off.png");
 					}
 					
 					oVideoTab.className = "";
@@ -793,13 +793,13 @@
 					if(agt.split(';')[1] == " msie 6.0")
 					{
 					
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_off_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_on_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_off.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_on.png");
 					}
 					
 					oVideoTab.className = "off";
@@ -882,10 +882,10 @@
 			
 			
 				<div id="header">
-					<img src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/header_back.png" style="height:26px; width:100%;">
+					<img src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/header_back.png" style="height:26px; width:100%;">
 					<div class="navigation">
 						<div id="videotab">
-								<img id="videotab_image" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png"/>
+								<img id="videotab_image" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on.png"/>
 							
 									<div id="videotab_inner">
 												<a href="javascript:TopStoriesSelected();" onClick="javascript:home.reportEvent('Gadget Section', 'clicked', 'Top Stories');">TOP STORIES</a>
@@ -896,7 +896,7 @@
 						<div style="width:6px;float:left;" >&nbsp;</div> 
 						<div id="playertab" class="off">
 								
-									<img id="playertab_image" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png"/> 
+									<img id="playertab_image" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off.png"/> 
 									<div  id="playertab_inner" ><a href="javascript:AudioVideoSelected();" onClick="javascript:home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');" >VIDEO & AUDIO</a>
 													<span class="selected">VIDEO & AUDIO</span>
 									</div>
@@ -944,8 +944,8 @@
 		<script type="text/javascript">
 				var imgVideotabImg = document.getElementById("videotab_image");
 				var imgPlayertabImg = document.getElementById("playertab_image");
-				imgVideotabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
-				imgPlayertabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
+				imgVideotabImg.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on_ie.png");
+				imgPlayertabImg.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off_ie.png");
 			</script>
 		<![endif]-->
 	
@@ -1063,7 +1063,7 @@
 			{
 				width:100%;
 				padding-top:6px;
-				/*background-image:url('http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif');*/
+				/*background-image:url('https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif');*/
 				background-position:0px 10px;
 				background-repeat:no-repeat;
 				
@@ -1453,7 +1453,7 @@
 			
 			#footer
 			{
-				background: url('http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/tab_bg_gradient.png') repeat-x;
+				background: url('https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/tab_bg_gradient.png') repeat-x;
 				height:26px;
 				min-width:240px;
 			}
@@ -1675,7 +1675,7 @@
 				else
 				{	
 					oDIV.className = "home_item_small";
-					oDIV.innerHTML = "<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>";
+					oDIV.innerHTML = "<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>";
 
 				}
 				
@@ -1709,7 +1709,7 @@
 				else
 				{
 					oDIV.className = "home_item_small";
-					oDIV.innerHTML ="<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a></div>";
+					oDIV.innerHTML ="<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a></div>";
 				}
 				
 				if(index == 3)
@@ -1732,13 +1732,13 @@
 					
 					if(agt.split(';')[1] == " msie 6.0")
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off.png");
 					}
 					
 					
@@ -1763,13 +1763,13 @@
 					if(agt.split(';')[1] == " msie 6.0")
 					{
 					
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_off_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_on_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png");
-						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png");
+						imgVideotabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_off.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_on.png");
 					}
 					
 					oVideoTab.className = "off";
@@ -1845,10 +1845,10 @@
   	<div id="widget_content">
 			<div id="main">
 				<div id="header">
-					<img src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/header_back.png" style="height:26px; width:100%;">
+					<img src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/header_back.png" style="height:26px; width:100%;">
 					<div class="navigation">
 						<div id="videotab">
-								<img id="videotab_image" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png"/>
+								<img id="videotab_image" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on.png"/>
 							
 									<div id="videotab_inner">
 												<a href="javascript:TopStoriesSelected();" onClick="javascript:gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');">TOP STORIES</a>
@@ -1859,7 +1859,7 @@
 						<div style="width:6px;float:left;" >&nbsp;</div> 
 						<div id="playertab" class="off">
 								
-									<img id="playertab_image" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png"/> 
+									<img id="playertab_image" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off.png"/> 
 									<div  id="playertab_inner" ><a href="javascript:AudioVideoSelected();" onClick="javascript:gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');" >VIDEO &amp; AUDIO</a>
 													<span class="selected">VIDEO &amp; AUDIO</span>
 									</div>
@@ -1872,11 +1872,11 @@
 			</div>
 			
 			<div id="more">
-					<img style="padding-bottom:1px;" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif"/>
+					<img style="padding-bottom:1px;" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif"/>
 					<a href="javascript:goToView('canvas')" onClick="javascript:gadget.reportEvent('Gadget Section', 'clicked', 'More Stories - Switch To Canvas');">More Stories</a>
 			</div>
 			<div id="footer">
-					<img src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/tab_bg_gradient.png" style="height:26px; width:100%;"/>
+					<img src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/tab_bg_gradient.png" style="height:26px; width:100%;"/>
 					<div id="ft_navigation" class="footer_navigation">
 						<a href="http://bbc.co.uk" onClick="javascript:gadget.reportEvent('Gadget Section', 'clicked', 'Gadget Footer BBC Hom');" target="_blank">BBC Home</a><div class="separator">|</div>
 						<a href="http://news.bbc.co.uk/" onClick="javascript:gadget.reportEvent('Gadget Section', 'clicked', 'Gadget Footer BBC News');" target="_blank">News</a><div class="separator">|</div>
@@ -1912,8 +1912,8 @@
 		
 				var imgVideotabImg = document.getElementById("videotab_image");
 				var imgPlayertabImg = document.getElementById("playertab_image");
-				imgVideotabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
-				imgPlayertabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
+				imgVideotabImg.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_top_on_ie.png");
+				imgPlayertabImg.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off_ie.png");
 			</script>
 		<![endif]-->
 		<!-- Stats tracking -->
@@ -1944,7 +1944,7 @@
 		{
 			width:785px;
 			height:35px;	
-			/*background-image:url("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/canvas_banner.jpg");*/
+			/*background-image:url("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/canvas_banner.jpg");*/
 			background-repeat:no-repeat;
 			vertical-align:middle;
 		}
@@ -2837,9 +2837,9 @@
 			  <div id="main" class="invisible">
 			  
 				  <div id="banner">
-				  	<img style="position:absolute;" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/canvas_banner.jpg"/>
+				  	<img style="position:absolute;" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/canvas_banner.jpg"/>
 				  	<div style="position:absolute;width:140px;height:30px; top:0px;overflow:hidden;">
-							<a href="http://news.bbc.co.uk" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'From Banner To BBC News');" target="_blank" title="BBC News"><img src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/canvas_banner.jpg" style="border:0px;"/></a>
+							<a href="http://news.bbc.co.uk" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'From Banner To BBC News');" target="_blank" title="BBC News"><img src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/canvas_banner.jpg" style="border:0px;"/></a>
 						</div>
 					</div>
 				  <div>
@@ -2863,43 +2863,43 @@
 													<div class="other_links_coloumn1">
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/world/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">WORLD</a></div>
-																<img id="other_links_arrow1" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow1" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_world" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/england/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">ENGLAND</a></div>
-																<img id="other_links_arrow2" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow2" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_england" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/scotland/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">SCOTLAND</a></div>
-																<img id="other_links_arrow3" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow3" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_scotland" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/business/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">BUSINESS</a></div>
-																<img id="other_links_arrow4" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow4" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_business" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/health/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">HEALTH</a></div>
-																<img id="other_links_arrow5" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow5" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_health" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/sci/tech/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">SCIENCE/NATURE</a></div>
-																<img id="other_links_arrow6" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow6" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_science" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/entertainment/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">ENTERTAINMENT</a></div>
-																<img id="other_links_arrow7" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow7" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_entertainment" class="link"></div>
 															</div>
 													</div>
@@ -2908,43 +2908,43 @@
 													<div class="other_links_coloumn2">
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/uk/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">UK</a></div>
-																<img id="other_links_arrow8" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow8" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_UK" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/northern_ireland/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">NORTHERN IRELAND</a></div>
-																<img id="other_links_arrow9" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow9" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_ireland" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/wales/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">WALES</a></div>
-																<img id="other_links_arrow10" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow10" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_wales" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/uk_politics/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">POLITICS</a></div>
-																<img id="other_links_arrow11" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow11" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_politics" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/education/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">EDUCATION</a></div>
-																<img id="other_links_arrow12" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow12" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_education" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/technology/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">TECHNOLOGY</a></div>
-																<img id="other_links_arrow13" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow13" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_technology" class="link"></div>
 															</div>
 															
 															<div class = "other_link_item">
 																<div class="hedding"><a href="http://news.bbc.co.uk/1/hi/talking_point/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'More From BBC News');" target="_blank">HAVE YOUR SAY</a></div>
-																<img id="other_links_arrow14" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif" class="arrow"/>
+																<img id="other_links_arrow14" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif" class="arrow"/>
 																<div id="link_have" class="link"></div>
 															</div>
 													</div>
@@ -2960,7 +2960,7 @@
 					  			<div id="audio_video">
 					  				<div class="title"><a href="http://news.bbc.co.uk/1/hi/video_and_audio/default.stm" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'To BBC AV News');" target="_blank">VIDEO AND AUDIO NEWS</a></div>
 					  				<div id="audio_video_list" class="list"></div>
-					  				<div class="more_link"><img id="other_links_arrow" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif"/>
+					  				<div class="more_link"><img id="other_links_arrow" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif"/>
 					  				<a href='http://news.bbc.co.uk/1/hi/video_and_audio/default.stm' onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'To BBC AV News');" target="_blank">More Video and Audio News</a></div>
 					  			</div>
 					  			<div id="sports_tab"/>
@@ -2980,8 +2980,8 @@
 					  		<td colspan="2" style="vertical-align:bottom;">
 					  			<div id="footer">
 					  				<div style="height:26px;width:785px; float:left;">
-					  					<img style="height:26px;width:785px;position:absolute;" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/tab_bg_gradient.png"/>
-					  					<div id="footer_logo" class="logo"><a href="http://www.bbc.co.uk" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'Canvas Footer BBC Home');" target="_blank"><img id="bottomLogo" src="http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/bbc_blocks.png" alt="BBC Home" title=" BBC Home" /></a></div>
+					  					<img style="height:26px;width:785px;position:absolute;" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/tab_bg_gradient.png"/>
+					  					<div id="footer_logo" class="logo"><a href="http://www.bbc.co.uk" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'Canvas Footer BBC Home');" target="_blank"><img id="bottomLogo" src="https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/bbc_blocks.png" alt="BBC Home" title=" BBC Home" /></a></div>
 								  		<div id="ft_navigation" class="footer_navigation">
 													<a target="_blank" href="http://bbc.co.uk" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'Canvas Footer BBC Home');">BBC Home</a><span class="separator">|</span>
 													<a target="_blank" href="http://news.bbc.co.uk/" onClick="javascript:canvas.reportEvent('Canvas Section', 'clicked', 'Canvas Footer BBC News');">News</a><span class="separator">|</span>
@@ -3112,7 +3112,7 @@
 						
 								if(oBottomLogo)	
 								{
-									oBottomLogo.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/bbc_blocks_ie6.png");
+									oBottomLogo.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/bbc_blocks_ie6.png");
 								}
 							}
 						};
@@ -3521,12 +3521,12 @@
 						var oDIV = document.createElement('div');
 						oDIV.setAttribute('id', "sport_item"+k);
 						oDIV.className = "sport_item_small";
-						oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
+						oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
 						"<a href=\""+sportItemsArr[k].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_blank\">"+sportItemsArr[k].title+"</a>";
 						oSportsTab.appendChild(oDIV);
 					}
 					
-					oSportsTab.innerHTML += "<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" />"+
+					oSportsTab.innerHTML += "<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\" />"+
 					"<a href=\"http://news.bbc.co.uk/sport\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'To BBC Sport');\" target=\"blank\">More Sport Headlines</a></div>";
 					CanvasAdjSize();
 				};
@@ -3670,7 +3670,7 @@
 									}
 									if(i == 5)
 									{
-										oDIV.innerHTML +="<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" />"+
+										oDIV.innerHTML +="<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\" />"+
 										"<a href=\"http://news.bbc.co.uk\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'BBC News');\" target=\"_blank\">More Top Stories</a></div>";
 									}
 								}
@@ -3699,7 +3699,7 @@
 								else
 								{
 									oDIV.className = "av_item_small";	
-									oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
+									oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
 									"<a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\">"+avArr[i].title+"</a>";
 								}
 							}
@@ -3724,7 +3724,7 @@
 				   	 		if((tmpCount < 6)&&(loadedItems.indexOf(entries[i].link)<0))
 				   	 		{
 				   	 			tmpCount++;
-				   	 			oMostPopularTab.innerHTML += "<div class=\"item\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:4px;float:left;\"/><a href=\""+entries[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Most Popular News');\" target=\"_blank\">"+entries[i].title+"</a></div>";
+				   	 			oMostPopularTab.innerHTML += "<div class=\"item\"><img src=\"" + gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/arrow.gif") + "\" style=\"margin-top:4px;float:left;\"/><a href=\""+entries[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Most Popular News');\" target=\"_blank\">"+entries[i].title+"</a></div>";
 				   	 			loadedItems.push(entries[i].link);
 				   	 			
 				   	 		}
