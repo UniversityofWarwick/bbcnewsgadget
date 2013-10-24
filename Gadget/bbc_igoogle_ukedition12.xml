@@ -563,7 +563,7 @@
 									}
 									if (node.nodeName == "media:thumbnail")
 									{
-										thumbnail = node.attributes[2].nodeValue;
+										thumbnail = node.attributes["url"].nodeValue;
 									}
 									
 									if(node.nodeName =="pubDate")
@@ -632,7 +632,7 @@
 									}
 									if (node.nodeName == "media:thumbnail")
 									{
-										thumbnail = node.attributes[2].nodeValue;
+										thumbnail = node.attributes["url"].nodeValue;
 									}
 									if(node.nodeName =="pubDate")
 				          {
@@ -1592,7 +1592,7 @@
 				          }
 				          if (node.nodeName == "media:thumbnail") 
 				          {
-				              thumbnail = node.attributes[2].nodeValue;
+				              thumbnail = node.attributes["url"].nodeValue;
 				          }
 				          if(node.nodeName =="pubDate")
 				          {
@@ -3426,9 +3426,9 @@
 								  }
 								  if (node.nodeName == "media:thumbnail") 
 								  {
-								  	if((node.attributes[2] != null)&&(node.attributes[2] != undefined))
+								  	if((node.attributes["url"] != null)&&(node.attributes["url"] != undefined))
 								  	{
-									  	thumbnail = node.attributes[2].nodeValue;
+									  	thumbnail = node.attributes["url"].nodeValue;
 									  }
 								  }  
 								  if(node.nodeName =="pubDate")
@@ -3562,7 +3562,7 @@
 							          }
 							          if (node.nodeName == "media:thumbnail") 
 							          {
-							              thumbnail = node.attributes[2].nodeValue;
+							              thumbnail = node.attributes["url"].nodeValue;
 							          }
 							       		if(node.nodeName =="pubDate")
 							          {
