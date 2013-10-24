@@ -692,13 +692,13 @@
 					if(index ==0)
 					{
 						oDIV.className = "home_item_expand";
-						oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\"  onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\"/></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>"+
+						oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\"  onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\"/></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>"+
 						"<div id=\"desc\">"+item.description+"</div>";
 					}
 					else if(index <3)
 					{
 						oDIV.className = "home_item";
-						oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a>";
+						oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a>";
 					}
 					else
 					{	
@@ -725,15 +725,15 @@
 					if(index ==0)
 					{
 						oDIV.className = "home_item_expand";
-						oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
-						"<br/><a class=\"anchor_img\" href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div>"+
+						oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
+						"<br/><a class=\"anchor_img\" href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl("http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif") + "\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div>"+
 						"<div id=\"desc\">"+item.description+"</div>";
 					}
 					else if(index <3)
 					{
 						oDIV.className = "home_item";
-						oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
-						"<br/><a class=\"anchor_img\" href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a>";
+						oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
+						"<br/><a class=\"anchor_img\" href=\""+item.link+"\" onClick=\"home.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"" + gadgets.io.getProxyUrl("http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif") + "\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a>";
 					}
 					else
 					{
@@ -762,13 +762,13 @@
 					var agt=navigator.userAgent.toLowerCase();
 					if(agt.split(';')[1] == " msie 6.0")
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png");
 					}
 					
 					oVideoTab.className = "";
@@ -793,13 +793,13 @@
 					if(agt.split(';')[1] == " msie 6.0")
 					{
 					
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png");
 					}
 					
 					oVideoTab.className = "off";
@@ -944,14 +944,25 @@
 		<script type="text/javascript">
 				var imgVideotabImg = document.getElementById("videotab_image");
 				var imgPlayertabImg = document.getElementById("playertab_image");
-				imgVideotabImg.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png";
-				imgPlayertabImg.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png";
+				imgVideotabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
+				imgPlayertabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
 			</script>
 		<![endif]-->
 	
-		
-		
-		<img style="display:none;" src='http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_3~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~'/>
+		<!-- Stats tracking -->
+		<script type="text/javascript">
+			gadgets.util.registerOnLoadHandler(function() {
+				var params = {};
+				params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+				
+				var url = 'http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_3~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~';
+				
+				// don't cache
+				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+				
+				gadgets.io.makeRequest(url, function(resp) { delete resp; }, params);
+			});
+		</script>
   ]]>
   </Content>
 
@@ -1653,18 +1664,19 @@
 				if(index ==0)
 				{
 					oDIV.className = "home_item_expand";
-					oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\"/></a></div><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>"+
+					oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\"/></a></div><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>"+
 					"<div id=\"desc\">"+item.description+"</div>";
 				}
 				else if(index <3)
 				{
 					oDIV.className = "home_item";
-					oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a>";
+					oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a>";
 				}
 				else
 				{	
 					oDIV.className = "home_item_small";
-					oDIV.innerHTML = "<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\"/><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>";
+					oDIV.innerHTML = "<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+item.title+"</a></div>";
+
 				}
 				
 				if(index == 3)
@@ -1684,20 +1696,20 @@
 				if(index ==0)
 				{
 					oDIV.className = "home_item_expand";
-					oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
-					"<br/><a class=\"anchor_img\" href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div>"+
+					oDIV.innerHTML = "<div class=\"top\"><div id='img'><a href=\""+item.link+"\" onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
+					"<br/><a class=\"anchor_img\" href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"" + gadgets.io.getProxyUrl("http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif") + "\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div>"+
 					"<div id=\"desc\">"+item.description+"</div>";
 				}
 				else if(index <3)
 				{
 					oDIV.className = "home_item";
-					oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+item.thumbnail+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
-					"<br/><a class=\"anchor_img\" href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a>";
+					oDIV.innerHTML = "<div id='img'><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(item.thumbnail)+"\" class=\"thumb\" alt=\""+item.title+"\" title=\""+item.title+"\" /></a></div><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a>"+
+					"<br/><a class=\"anchor_img\" href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\"><img src=\"" + gadgets.io.getProxyUrl("http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif") + "\" class='watch' alt=\""+item.title+"\" title=\""+item.title+"\" /></a>";
 				}
 				else
 				{
 					oDIV.className = "home_item_small";
-					oDIV.innerHTML ="<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\"/><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a></div>";
+					oDIV.innerHTML ="<div class=\"title\"><img style=\"padding-bottom:1px;\" src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\"/><a href=\""+item.link+"\"  onClick=\"gadget.reportEvent('Gadget Section', 'clicked', 'Top AV Stories');\" target=\"_blank\">"+item.title+"</a></div>";
 				}
 				
 				if(index == 3)
@@ -1720,13 +1732,13 @@
 					
 					if(agt.split(';')[1] == " msie 6.0")
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off.png");
 					}
 					
 					
@@ -1751,13 +1763,13 @@
 					if(agt.split(';')[1] == " msie 6.0")
 					{
 					
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off_ie.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on_ie.png");
 					}
 					else
 					{
-						imgVideotabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png";
-						imgPlayertabImage.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png";
+						imgVideotabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_off.png");
+						imgPlayertabImage.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_on.png");
 					}
 					
 					oVideoTab.className = "off";
@@ -1900,11 +1912,24 @@
 		
 				var imgVideotabImg = document.getElementById("videotab_image");
 				var imgPlayertabImg = document.getElementById("playertab_image");
-				imgVideotabImg.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png";
-				imgPlayertabImg.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png";
+				imgVideotabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_top_on_ie.png");
+				imgPlayertabImg.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/mini_tab_video_off_ie.png");
 			</script>
 		<![endif]-->
-		<img style="display:none;" src='http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_1~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~'/>	
+		<!-- Stats tracking -->
+		<script type="text/javascript">
+			gadgets.util.registerOnLoadHandler(function() {
+				var params = {};
+				params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+				
+				var url = 'http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_1~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~';
+				
+				// don't cache
+				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+				
+				gadgets.io.makeRequest(url, function(resp) { delete resp; }, params);
+			});
+		</script>	
   ]]>
   </Content>
 
@@ -3004,7 +3029,21 @@
  
 										<div>
 								  </div>
-								 <img src='http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_2~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~'/>
+								  
+									<!-- Stats tracking -->
+									<script type="text/javascript">
+										gadgets.util.registerOnLoadHandler(function() {
+											var params = {};
+											params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+											
+											var url = 'http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_2~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~';
+											
+											// don't cache
+											params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+											
+											gadgets.io.makeRequest(url, function(resp) { delete resp; }, params);
+										});
+									</script>	
 					  		</td>
 					  	</tr>
 					  </table>
@@ -3073,7 +3112,7 @@
 						
 								if(oBottomLogo)	
 								{
-									oBottomLogo.src = "http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/bbc_blocks_ie6.png";
+									oBottomLogo.src = gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/bbc_blocks_ie6.png");
 								}
 							}
 						};
@@ -3472,7 +3511,7 @@
 							var oDIV = document.createElement('div');
 							oDIV.setAttribute('id', "sport_item"+i);
 							oDIV.className = "sport_item";
-							oDIV.innerHTML = "<div id='img' style='border:0px'><a href=\""+sportItemsArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_blank\"><img src=\""+sportItemsArr[i].thumbnail+"\" class=\"thumb\" alt=\""+sportItemsArr[i].title+"\" title=\""+sportItemsArr[i].title+"\" /></a></div><div id='titl'><a href=\""+sportItemsArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_black\">"+sportItemsArr[i].title+"</a></div>";							
+							oDIV.innerHTML = "<div id='img' style='border:0px'><a href=\""+sportItemsArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(sportItemsArr[i].thumbnail)+"\" class=\"thumb\" alt=\""+sportItemsArr[i].title+"\" title=\""+sportItemsArr[i].title+"\" /></a></div><div id='titl'><a href=\""+sportItemsArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_black\">"+sportItemsArr[i].title+"</a></div>";							
 							oSportsTab.appendChild(oDIV);
 						}
 					}
@@ -3482,12 +3521,12 @@
 						var oDIV = document.createElement('div');
 						oDIV.setAttribute('id', "sport_item"+k);
 						oDIV.className = "sport_item_small";
-						oDIV.innerHTML = "<img src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\" style=\"margin-top:7px;float:left;\"/>"+
+						oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
 						"<a href=\""+sportItemsArr[k].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Sport News');\" target=\"_blank\">"+sportItemsArr[k].title+"</a>";
 						oSportsTab.appendChild(oDIV);
 					}
 					
-					oSportsTab.innerHTML += "<div class=\"more_link\"><img src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\" />"+
+					oSportsTab.innerHTML += "<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" />"+
 					"<a href=\"http://news.bbc.co.uk/sport\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'To BBC Sport');\" target=\"blank\">More Sport Headlines</a></div>";
 					CanvasAdjSize();
 				};
@@ -3615,7 +3654,7 @@
 									
 									if(i <3)
 									{
-										oDIV.innerHTML = "<div id='img'><a href=\""+topArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+topArr[i].thumbnail+"\" class=\"thumb\" alt=\""+topArr[i].title+"\" title=\""+topArr[i].title+"\" /></a></div><div id='titl'><a href=\""+topArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+topArr[i].title+"</a></div>"+
+										oDIV.innerHTML = "<div id='img'><a href=\""+topArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Top Stories');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(topArr[i].thumbnail)+"\" class=\"thumb\" alt=\""+topArr[i].title+"\" title=\""+topArr[i].title+"\" /></a></div><div id='titl'><a href=\""+topArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Top Stories');\" target=\"_blank\">"+topArr[i].title+"</a></div>"+
 										"<div class=\"desc\">"+topArr[i].description+"</div>";
 										oDIV.className = "home_item";	
 										loadedItems.push(topArr[i].link);									
@@ -3631,7 +3670,7 @@
 									}
 									if(i == 5)
 									{
-										oDIV.innerHTML +="<div class=\"more_link\"><img src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\" />"+
+										oDIV.innerHTML +="<div class=\"more_link\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" />"+
 										"<a href=\"http://news.bbc.co.uk\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'BBC News');\" target=\"_blank\">More Top Stories</a></div>";
 									}
 								}
@@ -3654,13 +3693,13 @@
 								if(i <3)
 								{
 									oDIV.className = "av_item";	
-									oDIV.innerHTML = "<div id='img'><a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\"><img src=\""+avArr[i].thumbnail+"\" class=\"thumb\" alt=\""+avArr[i].title+"\" title=\""+avArr[i].title+"\" /></a></div><div id='titl'><a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\">"+avArr[i].title+"</a><br/>"+
-									"<a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\"><img src=\"http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif\" class=\"watch\" alt=\""+avArr[i].title+"\" title=\""+avArr[i].title+"\" /></a></div>";
+									oDIV.innerHTML = "<div id='img'><a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\"><img src=\""+gadgets.io.getProxyUrl(avArr[i].thumbnail)+"\" class=\"thumb\" alt=\""+avArr[i].title+"\" title=\""+avArr[i].title+"\" /></a></div><div id='titl'><a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\">"+avArr[i].title+"</a><br/>"+
+									"<a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\"><img src=\"" + gadgets.io.getProxyUrl("http://newsimg.bbc.co.uk/nol/shared/img/v3/icons/video_text.gif") + "\" class=\"watch\" alt=\""+avArr[i].title+"\" title=\""+avArr[i].title+"\" /></a></div>";
 								}
 								else
 								{
 									oDIV.className = "av_item_small";	
-									oDIV.innerHTML = "<img src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\" style=\"margin-top:7px;float:left;\"/>"+
+									oDIV.innerHTML = "<img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:7px;float:left;\"/>"+
 									"<a href=\""+avArr[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'AV News');\" target=\"_blank\">"+avArr[i].title+"</a>";
 								}
 							}
@@ -3685,7 +3724,7 @@
 				   	 		if((tmpCount < 6)&&(loadedItems.indexOf(entries[i].link)<0))
 				   	 		{
 				   	 			tmpCount++;
-				   	 			oMostPopularTab.innerHTML += "<div class=\"item\"><img src=\"http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif\" style=\"margin-top:4px;float:left;\"/><a href=\""+entries[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Most Popular News');\" target=\"_blank\">"+entries[i].title+"</a></div>";
+				   	 			oMostPopularTab.innerHTML += "<div class=\"item\"><img src=\"" + gadgets.io.getProxyUrl("http://bbcnewsgadget.googlecode.com/svn/trunk/Gadget/images/arrow.gif") + "\" style=\"margin-top:4px;float:left;\"/><a href=\""+entries[i].link+"\" onClick=\"canvas.reportEvent('Canvas Section', 'clicked', 'Most Popular News');\" target=\"_blank\">"+entries[i].title+"</a></div>";
 				   	 			loadedItems.push(entries[i].link);
 				   	 			
 				   	 		}
