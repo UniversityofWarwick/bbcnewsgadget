@@ -1,8 +1,8 @@
 <?xml version="1.0"  encoding="UTF-8"  ?>
 <Module>
   <ModulePrefs
-  description="This is the official BBC News - UK Edition gadget. Visit BBC News for latest and breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news."
-  title="BBC News - Official UK Edition"
+  description="This is the BBC News - UK Edition gadget. Visit BBC News for latest and breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news."
+  title="BBC News - UK Edition"
   title_url="http://news.bbc.co.uk/"
   author="BBC News"
   author_email="bbcnewsgadget@bbc.co.uk"
@@ -43,7 +43,7 @@
 				height:26px;
 				float:left;
 				min-width:250px;
-				
+				position: relative;
 			}
 			
 			#header .navigation
@@ -61,23 +61,17 @@
 				padding-top:0px;
 				padding-bottom:10px;
 				float:left;
-				
 				border-bottom: solid 1px #DFDFDF;
 				font-family:Verdana !important;
 				overflow:hidden;
-				
 			}
 			
 			#main
 			{
 				width:100%;
 				overflow:hidden;
-				padding-top:5px;
-				padding-left:2px;
 				font-family:Verdana;
-				font-size:12px;
-				
-				
+				font-size:12px
 			}
 			
 			#main .home_item
@@ -471,6 +465,7 @@
 				height:26px;
 				background-image:url('https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/tab_bg_gradient.png');
 				min-width:240px;
+				position: relative;
 			}
 			
 			#footer .footer_navigation
@@ -948,21 +943,6 @@
 				imgPlayertabImg.src = gadgets.io.getProxyUrl("https://raw.github.com/UniversityofWarwick/bbcnewsgadget/master/Gadget/images/mini_tab_video_off_ie.png");
 			</script>
 		<![endif]-->
-	
-		<!-- Stats tracking -->
-		<script type="text/javascript">
-			gadgets.util.registerOnLoadHandler(function() {
-				var params = {};
-				params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
-				
-				var url = 'http://stats.bbc.co.uk/o.gif?~RS~s~RS~News~RS~t~RS~Google_i_3~RS~i~RS~0~RS~p~RS~0~RS~a~RS~Domestic~RS~u~RS~"http://www.google.com/ig/"~RS~r~RS~0~RS~q~RS~~RS~z~RS~51~RS~';
-				
-				// don't cache
-				params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
-				
-				gadgets.io.makeRequest(url, function(resp) { delete resp; }, params);
-			});
-		</script>
   ]]>
   </Content>
 
